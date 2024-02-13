@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+    <link rel="stylesheet" href="scss/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
+</head>
+
+<body id="wrapper">
+
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">+91 848 594 5080</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">sales@Koderz Clubsoftware.in</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5 social">
+                    <ul class="social_links">
+                        <li><a href="https://www.facebook.com/people/Koderz-Club/100087510656043/?mibextid=ZbWKwL"
+                                target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/koderzclub/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/koderz-club/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <h1 id="main-head">Koderz Club</h1>
+                            <span id="sub-head">Code, Connect, Create.</span></a>
+                        </div>
+                    <div id="navbar" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#index">Home</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="sponsors.html">Sponsors</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="competitions.html">Competitions</a></li>
+                            <li><a href="registration.html">Join Club</a></li>
+                            <li><a href="Admin.html">Admin</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/.nav-ends -->
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/banner-slide-1.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <a href="activities.html">
+                        <h1 class="banner_heading">Club <span>Competitions</span></h1>
+                    </a>
+                    <p class="banner_txt">Join us for our upcoming coding competition and put your skills to the test!
+                        This is a great opportunity to meet other coders, work on challenging problems, and win some
+                        prizes.</p>
+                    <div class="slider_btn">
+                        <a type="button" href="./competitions.html" class="btn btn-default slide">REGISTER NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="fill" style="background-image:url('img/banner-slide-2.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <h1 class="banner_heading"><span>Join</span> Club</h1>
+                    <p class="banner_txt">Become a part of our coding community and start developing your skills today!
+                        Whether you're a beginner or an experienced coder, there's a place for you in our club. Join us
+                        for our next meeting and see what we're all sponsors!</p>
+                    <div class="slider_btn">
+                        <a type="button" href="./registration.html" class="btn btn-default slide">JOIN CLUB</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="fill" style="background-image:url('img/banner-slide-3.jpg');"></div>
+                <div class="carousel-caption slide-up">
+                    <h1 class="banner_heading">Events <span>Gallery </span></h1>
+                    <p class="banner_txt">Check out some of the exciting events we've hosted in the past, including
+                        hackathons, workshops, and guest speaker events. We're always looking for new ideas and
+                        suggestions, so if you have an event in mind, let us know!</p>
+                    <div class="slider_btn">
+                        <a type="button" href="./gallery.html" class="btn btn-default slide">Visit gallery </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <i class="fa fa-angle-left"
+                aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <i
+                class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+
+
+    <section id="sponsors">
+        <div class="image-holder col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-left">
+            <div class="background-imgholder">
+                <img src="img/1.jpg" alt="sponsors" class="img-responsive" style="display:none;" />
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-2 col-xs-12 text-inner ">
+                <div class="text-block">
+                    <div class="section-heading">
+                        <h1>ABOUt <span>US</span></h1>
+                        <b><p class="subheading">Welcome to our Koderz Club. Koderz Club is an official community of The
+                            Dept of Computer Science & Information Technology, NEDUET.</p></b>
+                    </div>
+
+                    <ul class="sponsorsul">
+                        <li> <i class="fa fa-check"></i>Our club is open to all students who are interested in coding,
+                            regardless of their experience level or background.</li>
+                        <li> <i class="fa fa-check"></i>We believe that coding is not just a skill, but a powerful tool
+                            for solving real-world problems and making a positive impact on society.</li>
+                        <li> <i class="fa fa-check"></i> Our club aims to provide a supportive and inclusive environment
+                            where students can explore their interests in technology and develop their coding skills
+                            through hands-on projects, workshops, and competitions.</li>
+                        <li> <i class="fa fa-check"></i>Join us to connect with like-minded students, build your coding
+                            portfolio, and gain valuable experience that will help you succeed in today's tech-driven
+                            world!</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="process">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="col-md-12 col-xs-12">
+                    <h1>Our <span>Mission</span></h1>
+                    <p class="subheading">Our coding club is dedicated to fostering a community of passionate coders and
+                        technology enthusiasts who are committed to developing their skills and making a positive impact
+                        on society. To achieve this, we have defined the following mission statement, which outlines our
+                        aim, objectives, vision, and values.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="user-image"><img class="user-img" src="img/aim.jpg" alt="user"
+                        class="img-responsive" /></div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">AIMS</a></h4>
+                        <p>Our aim is to provide a platform for students to develop their coding skills and explore
+                            their interest in technology. <br> <br> <br></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="user-image"><img class="user-img" src="img/objective.jpeg" alt="user"
+                        class="img-responsive" /></div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Objectives</a></h4>
+                        <p>Our objective is to provide opportunities for students to work on projects, organizing coding
+                            competitions, and creating a community of coders who can collaborate and learn from each
+                            other.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block">
+                    <div class="user-image"><img class="user-img" src="img/vision.jpg" alt="user"
+                        class="img-responsive" /></div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Vision</a></h4>
+                        <p>Our vision is to inspire the next generation of technology leaders and innovators, and to
+                            foster a culture of creativity, collaboration, and problem-solving.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 block process-block lastchild">
+                    <div class="user-image"><img class="user-img" src="img/mission.png" alt="user"
+                        class="img-responsive" /></div>
+
+                    <div class="process-text-block">
+                        <h4><a href="#">Mission</a></h4>
+                        <p>Our Mission is to provide a supportive and inclusive environment where students from diverse
+                            backgrounds can learn and grow together</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="col-md-12 col-xs-12">
+                    <h1>OUR <span>Club Members</span></h1>
+                    <b><p class="subheading">Talent wins games but teamwork and intelligence win championships <i> –
+                            Michael Jordan</i></b></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-12 block ">
+                    <div class="testimonial_user">
+                        <div class="user-image"><img class="user-img" src="img/mehwish.jpeg" alt="user"
+                                class="img-responsive" /></div>
+                        <div class="links">
+                            <ul class="user-links">
+                                <li style="font-size: 20px;"><a href="https://www.facebook.com/TheMehwishAlam" target="_blank"><i
+                                            class="fa fa-facebook"></i></a></li>
+                                <li style="font-size: 20px;"><a href="https://www.linkedin.com/in/themehwishalam/" target="_blank"><i
+                                            class="fa fa-linkedin"></i></a></li>
+                            </ul><br>
+                        </div>
+                        <div class="user-info">
+                            <h5>Technical</h5>
+                            <p>Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 block ">
+                    <div class="testimonial_user">
+                        <div class="user-image"><img class="user-img" src="img/ammara.jpeg" alt="user"
+                                class="img-responsive" /></div>
+                        <div class="links">
+                            <ul class="user-links">
+                                <li style="font-size: 20px;"><a href="https://www.facebook.com/profile.php?id=100044141739333" target="_blank"><i
+                                            class="fa fa-facebook"></i></a></li>
+                                <li style="font-size: 20px;"><a href="https://www.linkedin.com/in/ammara-khan-020224237/" target="_blank"><i
+                                            class="fa fa-linkedin"></i></a></li>
+                            </ul><br>
+                        </div>
+                        <div class="user-info">
+                            <h5>Documentation</h5>
+                            <p>Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 col-sm-12 block ">
+                    <div class="testimonial_user">
+                        <div class="user-image"><img class="user-img" src="img/minahil.jpeg" alt="user"
+                                class="img-responsive" /></div>
+                        <div class="links">
+                            <ul class="user-links">
+                                <li style="font-size: 20px;"><a href="https://www.facebook.com/profile.php?id=100009627048387&mibextid=ZbWKwL"
+                                        target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li style="font-size: 20px;"><a href="https://www.linkedin.com/in/minahil-tariq-b82239245" target="_blank"><i
+                                            class="fa fa-linkedin"></i></a></li>
+                            </ul><br>
+                        </div>
+                        <div class="user-info">
+                            <h5>Event Management</h5>
+                            <p>Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 block ">
+                    <div class="testimonial_user">
+                        <div class="user-image"><img class="user-img" src="img/areeba.jpeg" alt="user"
+                                class="img-responsive" /></div>
+                        <div class="links">
+                            <ul class="user-links">
+                                <li style="font-size: 20px;"><a href="https://www.facebook.com/areeba.aamir.560" target="_blank"><i
+                                            class="fa fa-facebook"></i></a></li>
+                                <li style="font-size: 20px;"><a href="https://www.linkedin.com/in/areeba-aamir-122a17220/" target="_blank"><i
+                                            class="fa fa-linkedin"></i></a></li>
+                            </ul><br>
+                        </div>
+                        <div class="user-info">
+                            <h5>Graphics</h5>
+                            <p>Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr />
+                        <div style="display: flex; align-items: center;">
+                            <a href="https://goo.gl/maps/s3jr3wgzzwcWcBP89" target="_blank"><img src="img/location.png"
+                                    alt="" style="width: 70%; margin-right: 14px;"></a>
+                            <div>
+                                <p><i>
+                                        NED UNIVERSITY <br>
+                                        Karachi, Pakistan. </i></p>
+                            </div>
+                        </div><br>
+                        <div style="display: flex; align-items: center;">
+                            <a href="contact.html"><img src="img/email.png" alt=""
+                                    style="width: 60%; margin-right: 20px;"></a>
+                            <div>
+                                <p> <b>Phone: </b>+91 848 594 5080 <br>
+                                    <b> Email: </b>sales@Koderz Clubsoftware.in
+                                </p>
+                            </div>
+                        </div>
+                        <a href="https://goo.gl/maps/s3jr3wgzzwcWcBP89" target="_blank" class="learnmore">Directions <i
+                                class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Quick Links</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li><a href="contact.html#">Contact</a></li>
+                            <li><a href="competitions.html">Compete</a></li>
+                            <li><a href="registration.html">Become a Member</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Community</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                    <div class="footer-block">
+                        <h4>Recent Posts</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                    Developed by <a href="#">Koderz Club Code, Connect, Create, Collaborate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</html>

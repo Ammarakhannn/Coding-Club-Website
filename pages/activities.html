@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Koderz Kombat</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+    <link rel="stylesheet" href="scss/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
+
+</head>
+<style>
+    .leaderboard {
+        text-align: center;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    thead {
+        background-color: #F7F7F7;
+    }
+
+    th {
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+        background-color: #F7F7F7;
+    }
+
+    tr:hover {
+        background-color: #ECECEC;
+    }
+</style>
+
+<body id="wrapper">
+
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">+91 848 594 5080</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">sales@Koderz Clubsoftware.in</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ul class="social_links">
+                        <li><a href="https://www.facebook.com/people/Koderz-Club/100087510656043/?mibextid=ZbWKwL"
+                                target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/koderzclub/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/koderz-club/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <h1 id="main-head">Koderz Club</h1>
+                        <span id="sub-head">Code, Connect, Create.</span></a>
+                    </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-right">
+                    <div class ="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="registration.html">Join Club</a></li>
+                        <li><a href="Admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+
+    <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>WEB<span> QUEST</span></h2>
+            </div>
+        </div>
+        <br><br>
+        <style>
+            .leaderboard {
+                opacity: 0;
+                transform: scale(0.5);
+                animation: popUp 2s forwards;
+            }
+            
+            @keyframes popUp {
+                0% {
+                    opacity: 0;
+                    transform: scale(0.5);
+                }
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            </style>
+        <div class="section-heading text-center">
+            <H2> <span>WINNERS</span>  </H2>
+            </div>
+            <div class="leaderboard">
+                <h2>Round 2</h2>
+                <br>
+                <table id="leadtable">
+                    <thead style=" color: #52A0FD;">
+                        <tr id="leadtr">
+                            <th >Rank</th>
+                            <th>Group Name</th>
+                            <th>Members</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leadbody">
+                        <tr id="leadtr">
+                            <td>Winner</td>
+                            <td>Code Morphers</td>
+                            <td><ul><Li>Ammar Abid</Li>
+                            <li>Waqar Gul</li>
+                            <li>Farhan Shakil</li>
+                            <li>Eraj Tanweer</li>
+                            <li>Mariam Faisal</li>
+                            <li>Hashir Jamal</li></ul></td>
+                            <td>Software Engineering</td>
+                        </tr>
+                        <tr id="leadtr">
+                            <td>First Runner Up</td>
+                            <td>Team Pluto</td>
+                            <td><ul><li>Abdul Basit</li>
+                            <li>Bakhtiar Sabir</li>
+                            <li>M. Abbas Hyder</li>
+                            <li>M. Hamza Bham</li>
+                            <li>Syed Danial Ali</li>
+                            <li>Wajih Nawaz Khan</li></ul></td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr id="leadtr">
+                            <td>First Runner Up</td>
+                            <td>Noname x Joe</td>
+                            <td><ul><li>Wali Tauseef</li>
+                            <li>Abdul Rafay</li>
+                            <li>Farzaam Ali</li>
+                            <li>Shahbaz Ali</li>
+                            <li>M. Owais</li>
+                            <li>Sher Khan</li></ul></td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr id="leadtr">
+                            <td>Second Runner Up</td>
+                            <td>TIEST Developers</td>
+                            <td><ul><li>KanteeLal</li>
+                            <li>Zeeshan Ahmed</li>
+                            <li>Liaquat Ali</li>
+                            <li>Yousaf Khan</li>
+                            <li>Ijlal Hussain</li>
+                            <li>Sher Khan</li></ul></td>
+                            <td>TIEST Computer Science</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+<br><br>
+            <div class="leaderboard">
+                <h2>Round 1</h2>
+                <br>
+                <table id="leadtable">
+                    <thead style=" color: #52A0FD;">
+                        <tr>
+                            <th>Rank</th>
+                            <th>Group Name</th>
+                            <th>Members</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leadbody">
+                        <tr id="leadtr">
+                            <td>1</td>
+                            <td>Bug Busters</td>
+                            <td><ul><li>Abdul Rafay</li>
+                            <li>Ahmed Hassan</li>
+                            <li>Shayan</li></ul></td>
+                            <td>Data Science</td>
+                        </tr>
+                        <tr id="leadtr">
+                            <td>2</td>
+                            <td>Joe</td>
+                            <td><ul><li>Abdul Rafay</li>
+                            <li>Farzaam Ali</li>
+                            <li>Wali Tauseef</li></ul></td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr id="leadtr">
+                            <td>3</td>
+                            <td>Code Bros</td>
+                            <td><ul><li>Abdul Basit</li>
+                            <li>M. Abbas Hyder</li>
+                            <li>Wajih Nawaz Khan</li></ul></td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr id="leadtr">
+                            <td>4</td>
+                            <td>Zen Kode</td>
+                            <td><ul><li>Abdul Ahad Shaikh</li>
+                                <li>Zain Mustaqeem</li></ul></td>
+                            <td>Computer Science</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr/>
+                        <div style="display: flex; align-items: center;">
+                            <a href="https://goo.gl/maps/s3jr3wgzzwcWcBP89" target="_blank"><img src="img/location.png"
+                                    alt="" style="width: 70%; margin-right: 14px;"></a>
+                            <div>
+                                <p><i> Koderz Club <br>
+                                        CSIT Department
+                                        NED UNIVERSITY <br>
+                                        Karachi, Pakistan. </i></p>
+                            </div>
+                        </div><br>
+                        <div style="display: flex; align-items: center;">
+                            <a href="contact.html"><img src="img/email.png" alt=""
+                                    style="width: 60%; margin-right: 20px;"></a>
+                            <div>
+                                <p> <b>Phone: </b>+91 848 594 5080 <br>
+                                    <b> Email: </b>sales@Koderz Clubsoftware.in
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Quick Links</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li><a href="sponsors.html">Sponsors Us</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html#">Contact</a></li>
+                            <li><a href="competitions.html">Sign In</a></li>
+                            <li><a href="registration.html">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Community</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Free Goods</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                    <div class="footer-block">
+                        <h4>Recent Posts</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                    Developed by <a href="#">Koderz Club Code, Connect, Create, Collaborate</a> designed by <a
+                        href="#">Designing Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+.nav {
+	font-size: 13px
+}
+
+#Message{
+  color:#10737b; 
+  text-align: center; 
+  font-size: large; 
+  margin-top: 6px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-top: 20px;
+  font-family: arial, sans-serif;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#status_btn{
+  width: 120px;
+}
+
+
+#state{
+  color: blue;
+}
+
+#main-head{
+  font-size: 30px;
+  text-align: left;
+}
+#sub-head{
+  font-size: 12px;
+}
+
+.admin-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.admin-li {
+  margin-top: 5px;
+  margin-left: 1px;
+}
+
+.parallelogram-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#159eee;
+  color: #fff;
+  border: none;
+  transform: skewX(-20deg);
+}
+
+.parallelogram-btn:hover {
+  background-color: #23527c;
+}
+
+@media (max-width: 768px) {
+  .container {
+      justify-content: center;
+  }
+}
+
+#result{
+  color:#10737b; 
+  text-align: center; 
+  font-size: large; 
+  margin-top: 6px;
+}
+
+#reg-change{
+  margin: 2px 2px;
+  background-color: #159eee;
+  border: 1px solid white;
+  color: white;
+  border-radius: 6px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.table-wrapper th {
+  background-color: #f2f2f2;
+}
+
+/* Optional: Add media queries for different screen sizes */
+@media (max-width: 768px) {
+  .table-wrapper table {
+    font-size: 14px;
+  }
+}

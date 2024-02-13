@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+    <link rel="stylesheet" href="scss/style.css">
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script/index.js"></script>
+</head>
+
+<body id="wrapper">
+
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">+91 848 594 5080</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">sales@Koderz Clubsoftware.in</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ul class="social_links">
+                        <li><a href="https://www.facebook.com/people/Koderz-Club/100087510656043/?mibextid=ZbWKwL"
+                                target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/koderzclub/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/koderz-club/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <h1 id="main-head">Koderz Club</h1>
+                        <span id="sub-head">Code, Connect, Create.</span>
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="registration.html">Join Club</a></li>
+                        <li class="active"><a href="Admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--/.nav-ends -->
+    </header>
+
+    <section class="container admin-btn">
+
+        <div>
+            <ul class="admin-ul" id="admin-ul">
+                <!-- <li class="admin-li"><button class="parallelogram-btn" id="comps">Competitions</button></li>
+                <li class="admin-li"><button class="parallelogram-btn" id="mems">Members</button></li> -->
+                <!-- <li class="admin-li"><button class="parallelogram-btn" id="log">Log In</button></li> -->
+            </ul>
+        </div>
+    </section>
+
+    <div id="change">
+
+        <section id="login-reg">
+            <div class="container">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3 id="form-head">Admin Login</h3>
+                                <p id="form-subhead">login in here.</p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-key"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <form role="form" class="login-form form" id="admin_login" action="admin_login.php" method="GET">
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                    <input type="text" name="Username" id="Admin" class="form-control" placeholder="Username" aria-describedby="basic-addon1" pattern="[A-Za-z ]+" title="No numbers are allowed" required>
+
+                                </div>
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
+                                    <input type="password" name="Password" id="Password" class="form-control"
+                                        placeholder="Password" aria-describedby="basic-addon1" required>
+                                </div>
+                                <button type="submit" value="Submit" class="btn" id="LogIn">Log In</button>
+                            </form>
+                            <p id="result"></p>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        
+    </div>
+
+    <script src="./script/admin.js"></script>
+    
+</body>
+
+</html>

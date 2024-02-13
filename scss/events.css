@@ -1,0 +1,475 @@
+.content {
+
+    overflow: none;
+    width: 850px;
+    padding: 0px 0;
+    height: 500px;
+    position: relative;
+    margin: 10px auto;
+    background: #000000;
+    background: -moz-linear-gradient(right, #10396b 0%, #0f88f3 80%, #18affb 100%);
+    background: -webkit-linear-gradient(right, #10396b 0%, #0f88f3 80%, #18affb 100%);
+    background: linear-gradient(to left, #10396b 0%, #0f88f3 80%, #18affb 100%);
+    border-radius: 3px;
+    box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/*  Events display */
+.events-container {
+    overflow-y: scroll;
+    height: 100%;
+    float: right;
+    margin: 0px auto;
+    font: 13px Helvetica, Arial, sans-serif;
+    display: inline-block;
+    padding: 0 10px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.events-container:after {
+    clear: both;
+}
+
+.event-card {
+    padding: 20px 0;
+    width: 350px;
+    margin: 20px auto;
+    display: block;
+    background: #fff;
+    border-left: 10px solid #52A0FD;
+    border-radius: 3px;
+    box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.event-count,
+.event-name,
+.event-cancelled {
+    display: inline;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.event-count {
+    color: #52A0FD;
+    text-align: right;
+}
+
+.event-name {
+    padding-right: 0;
+    text-align: left;
+}
+
+.event-cancelled {
+    color: #535151;
+    text-align: right;
+}
+
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+
+
+/* CALENDER*/
+.calendar {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar h2 {
+    text-align: center;
+    
+  }
+  
+  .calendar-body {
+    border: 1px solid rgb(41, 40, 40);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-header button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendar-table th,
+  .calendar-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .calendar-table th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+  }
+  
+  .calendar-table td.today {
+    background-color: #353636;
+    color: #fff;
+  }
+  
+  .calendar-table td.event {
+    background-color: #159eee;
+    color: #333;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .calendar-table td.event:hover::after {
+    content: attr(data-event-name);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  
+
+/*
+.subsection2 {
+    font-size: 100%;
+    line-height: 1.5;
+    /* font-family: "Roboto Condensed", sans-serif; 
+    background: #ffffff;
+    background-image: linear-gradient(#ffffff 0%, #159eee 100%);
+    color: rgb(25, 24, 24);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.calendar-wrapper {
+    width: 50%;
+    margin: 3em auto;
+    padding: 2em;
+    border: 1px solid #dcdcff;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#eventtable {
+    clear: both;
+    width: 100%;
+    border: 1px solid #323232;
+    border-radius: 3px;
+    border-collapse: collapse;
+    color: #4f4f4f;
+}
+
+#eventtd {
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #323232;
+    border-top: 1px solid #323232;
+    width: 14.28571429%;
+    font-size: 1.5em;
+}
+
+#eventtd:hover {
+    /* color: #28283b; 
+    font-weight: bold;
+}
+
+#eventtd.not-current {
+    color: #817f7f;
+}
+
+#eventtd.today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #2c2c65;
+    font-size: 1.5em;
+}
+
+#eventtd.today:hover {
+
+    color: #8383cd;
+    font-weight: bold;
+}
+
+#eventtd {
+    text-align: center;
+    border: none;
+    color: #47479f;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#btnPrev {
+    float: left;
+    margin-bottom: 20px;
+}
+
+#btnPrev:before {
+    content: '\f104';
+    font-family: FontAwesome;
+    padding-right: 4px;
+}
+
+#btnNext {
+    float: right;
+    margin-bottom: 20px;
+}
+
+#btnNext:after {
+    content: '\f105';
+    font-family: FontAwesome;
+    padding-left: 4px;
+}
+
+#btnPrev,
+#btnNext {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #000000;
+    cursor: pointer;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+#btnPrev:hover,
+#btnNext:hover {
+    color: #28283b;
+    font-weight: bold;
+} */
+
+
+
+/* EVENTS SLIDESHOW */
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Small phone screens */
+@media only screen and (max-width: 400px) {
+
+    .content,
+    .events-container,
+    .year-header,
+    .calendar-container {
+        width: 320px;
+    }
+
+    .dialog {
+        width: 320px;
+    }
+
+    .months-table {
+        display: block;
+        margin: 0 auto;
+        width: 320px;
+    }
+
+    .event-card {
+        width: 300px;
+    }
+
+    .day {
+        padding: 0 7px;
+    }
+
+    .month {
+        display: inline-block;
+        padding: 10px 10px;
+        font-size: .8rem;
+    }
+
+    .table-date {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .event-name,
+    .event-count,
+    .event-cancelled {
+        font-size: .8rem;
+    }
+
+    .add-button {
+        bottom: 10px;
+        right: 10px;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {}
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+
+    .navbar .nav-item .dropdown-menu .dropdown-item {
+        font-weight: bold;
+    }
+
+    .navbar .nav-item .dropdown-menu .dropdown-item:hover {
+        background-color: #52A0FD;
+    }
+}
+
+.arrow-down {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

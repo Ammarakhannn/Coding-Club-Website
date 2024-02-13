@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+    <link rel="stylesheet" href="scss/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="./script/index.js"></script> -->
+</head>
+
+<body id="wrapper">
+
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">+91 848 594 5080</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">sales@Koderz Clubsoftware.in</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ul class="social_links">
+                        <li><a href="https://www.facebook.com/people/Koderz-Club/100087510656043/?mibextid=ZbWKwL"
+                                target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/koderzclub/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/koderz-club/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <h1 id="main-head">Koderz Club</h1>
+                        <span id="sub-head">Code, Connect, Create.</span>
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="active"><a href="competitions.html">Competitions</a></li>
+                        <li><a href="registration.html">Join Club</a></li>
+                        <li><a href="Admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--/.nav-ends -->
+    </header>
+
+    <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>JOIN <span>COMPETITIONS</span></h2>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="login-reg">
+        <div class="container">
+            <!-- Top content -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 forms-right-icons">
+                    <div class="section-heading">
+                        <h2>Join COMPETITIONS<span> Now</span></h2>
+                        <p class="subheading">Koderz Club is offering the followig competions:</p>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 icon"><i class="fa fa-bullhorn"></i></div>
+                        <div class="col-xs-10 datablock">
+                            <h4>Competitions</h4>
+                            <p>Register now to participate and stand a chance to win amazing prizes and recognition for
+                                your talents. We have three competitions : </p>
+                            <ul style="margin-left: 20px;">
+                                <li><i><strong>&#8226; Koderz Kombat</strong></i></li>
+                                <li><i><strong>&#8226; Web Kode</strong></i></li>
+                                <li><i><strong>&#8226; Web Quest</strong></i></li>
+                            </ul>
+                            <button type="button" class="btn slide join" id="comp_btn">JOIN NOW</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-2 icon"><i class="fa fa-support"></i></div>
+                        <div class="col-xs-10 datablock">
+                            <h4>Registration status</h4>
+                            <p>Check Competition registration here.</p>
+                            <button style="width: 120px;" type="button" class="btn slide join"
+                                id="comp_status_btn">CHECK STATUS</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3 id="form-head">Register your team here</h3>
+                                <p id="form-subhead">Register in Competitions now and win amazing Prize!</p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-magic"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom" id="form2">
+                            <form role="form" class="login-form form" id="comp_form" action="competitions.php"
+                                method="POST">
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                    <input type="text" name="member1" id="member1" class="form-control"
+                                        placeholder="Member 1 (Lead)" aria-describedby="basic-addon1"
+                                        pattern="[A-Za-z ]+" title="No numbers are allowed" required>
+                                </div>
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i
+                                            class="fa fa-envelope"></i></span>
+                                    <input type="text" name="Email" id="Email" class="form-control" placeholder="Email"
+                                        aria-describedby="basic-addon1" required>
+                                </div>
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                    <input type="text" name="member2" id="member2" class="form-control"
+                                        placeholder="Member 2" aria-describedby="basic-addon1" pattern="[A-Za-z ]+"
+                                        title="No numbers are allowed" required>
+                                </div>
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                    <input type="text" name="member3" id="member3" class="form-control"
+                                        placeholder="Member 3" aria-describedby="basic-addon1" pattern="[A-Za-z ]+"
+                                        title="No numbers are allowed" required>
+                                </div>
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-flag"></i></span>
+                                    <select id="competitions"
+                                        style="height: 40px; width: 190px;  border: 1px solid rgb(222, 221, 221); border-left: none;"
+                                        name="comp">
+                                        <option value="Koderz-Kombat">Koderz Kombat</option>
+                                        <option value="Web-Kode">Web Kode</option>
+                                        <option value="Web-Quest">Web Quest</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group form-group" id="rules">
+                                    <p>Competition Rules</p>
+                                    <p>1. All participants must abide by the rules and guidelines of the competition.
+                                        <br>
+                                        2. Participants must comply with the deadlines and submission requirements
+                                        stated for each competition.
+                                    </p>
+                                    <p><input type="checkbox" name="check" id="" required> I have read, understood, and
+                                        accepted the competition rules.</p>
+                                </div>
+
+
+                                <button type="submit" value="Submit" class="btn" id="competitions" name="send">Submit
+                                    form</button>
+                                <p id="Message"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <p id="cstatus" style="margin-top: 40px;">
+                </p>
+
+    </section>
+    <div class="subsection2" id="leadpop">
+        <h2 align="center"><span>Unleash the Coding Titans:</span> The Epic Battle for Supremacy!</h2><br>
+        <h4 align="center"><a href="activities.html">VIEW LEADERBOARD</a></h4>
+    </div>
+    <br><br>
+    <style>
+        #leadpop {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: opacity 1s, transform 1s;
+        }
+
+        #leadpop.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var subsection = document.querySelector("#leadpop");
+        
+            function checkScroll() {
+                var triggerBottom = window.innerHeight * 0.8;
+                var subsectionTop = subsection.getBoundingClientRect().top;
+        
+                if (subsectionTop < triggerBottom) {
+                    subsection.classList.add("show");
+                    window.removeEventListener("scroll", checkScroll);
+                }
+            }
+        
+            window.addEventListener("scroll", checkScroll);
+            checkScroll();
+        });
+        </script>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr />
+                        <div style="display: flex; align-items: center;">
+                            <a href="https://goo.gl/maps/s3jr3wgzzwcWcBP89" target="_blank"><img src="img/location.png"
+                                    alt="" style="width: 70%; margin-right: 14px;"></a>
+                            <div>
+                                <p><i>
+                                        NED UNIVERSITY <br>
+                                        Karachi, Pakistan. </i></p>
+                            </div>
+                        </div><br>
+                        <div style="display: flex; align-items: center;">
+                            <a href="contact.html"><img src="img/email.png" alt=""
+                                    style="width: 60%; margin-right: 20px;"></a>
+                            <div>
+                                <p> <b>Phone: </b>+91 848 594 5080 <br>
+                                    <b> Email: </b>sales@Koderz Clubsoftware.in
+                                </p>
+                            </div>
+                        </div>
+                        <a href="https://goo.gl/maps/s3jr3wgzzwcWcBP89" target="_blank" class="learnmore">Directions <i
+                                class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Quick Links</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li><a href="contact.html#">Contact</a></li>
+                            <li><a href="competitions.html">Compete</a></li>
+                            <li><a href="registration.html">Become a Member</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Community</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                            <div class="footer-block">
+                                <h4>Recent Posts</h4>
+                                <hr />
+                                <ul class="footer-links">
+                                    <li>
+                                        <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                        <p class="post-date">May 25, 2017</p>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                        <p class="post-date">May 25, 2017</p>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                        <p class="post-date">May 25, 2017</p>
+                                    </li>
+        
+                                </ul>
+                            </div>
+                        </div> -->
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                    Developed by <a href="#">Koderz Club Code, Connect, Create, Collaborate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div id="panel">
+        <div id="panel-admin">
+            <div class="panel-admin-box">
+                <div id="tootlbar_colors">
+                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
+                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+                </div>
+            </div>
+            
+        </div>
+        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
+    </div> -->
+
+
+
+    <script src="./script/competitions.js"></script>
+</body>
+<script>
+
+
+</script>
+
+</html>
